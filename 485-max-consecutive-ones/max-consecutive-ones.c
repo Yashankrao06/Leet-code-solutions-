@@ -11,7 +11,8 @@ int findMaxConsecutiveOnes(int* nums, int numsSize) {
             }
         }else{
             currentcount=0;
-        }left++;
+        }
+        left++;
     }
     return count;
 }
