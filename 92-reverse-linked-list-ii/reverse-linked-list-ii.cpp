@@ -12,10 +12,7 @@ public:
         for (int i = 0; i < left - 1; i++) {
             prev = prev->next;
         }
-        
-        // 'curr' wo node hai jahan se reversal shuru hoga
         ListNode* curr = prev->next;
-        
         // Step 3: Connections ko swap karke reverse karo
         for (int i = 0; i < right - left; i++) {
             ListNode* temp = curr->next;      // temp wo node hai jise aage lana hai
