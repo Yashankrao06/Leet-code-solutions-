@@ -6,7 +6,6 @@ public:
         for (int i = 0; i < n; i++) {
             miss ^= i ^ nums[i];
         }
-        
         return miss;
     }
 };
