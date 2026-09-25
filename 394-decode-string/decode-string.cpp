@@ -4,14 +4,13 @@ public:
         stack<int> counts;
         stack<string> result;
         string currentStr = "";
-        int k = 0;
-        
+        int k = 0;  
         for (char ch : s) {
             // Digit build karo
             if (isdigit(ch)) {
                 k = k * 10 + (ch - '0');
             }
-            // 2. '[' milne par state stack me save karo
+            // '[' milne par state stack me save karo
             else if (ch == '[') {
                 counts.push(k);
                 result.push(currentStr);
