@@ -8,8 +8,7 @@ public:
             // Open brackets ko stack me daalo
             if (ch == '(' || ch == '{' || ch == '[') {
                 st.push(ch);
-            } 
-            else {
+            }else {
                 if (st.empty()) return false;
                 char top = st.top();
                 if ((ch == ')' && top == '(') || 
