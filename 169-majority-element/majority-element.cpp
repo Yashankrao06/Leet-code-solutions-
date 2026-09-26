@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int majorityElement(std::vector<int>& nums) {
+    int majorityElement(vector<int>& nums) {
         int candidate = 0;
         int count = 0;
         
